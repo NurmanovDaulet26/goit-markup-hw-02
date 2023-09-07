@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1500px;
     padding-left: 215px;
     padding-right: 215px;
     margin: 0;
@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
 
 }
 
@@ -76,13 +76,10 @@ body {
 .contacts {
     display: flex;
     list-style-type: none;
-    margin-left: auto;
+    margin-left: 133px;
     text-decoration: none;
     align-items: center;
     font-weight: 500;
-
-
-
 }
 
 .contacts_link:hover {
@@ -262,8 +259,8 @@ body {
 
 
 .catalog {
-    padding-left: 215px;
-    padding-right: 215px;
+    padding: 0 215px;
+    
 }
 
 hr {
@@ -365,18 +362,21 @@ hr {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-left: -15px;
-    margin-right: -15px;
     padding: 0;
+    width: 1500px;
+    padding: 0 -35px;
+    margin: 0 -35px;
+    
 
 }
 
 .grid_item {
     margin-left: 30px;
     margin-bottom: 50px;
-    object-fit: cover;
     border: 1px solid #EEE;
     background: #FFF;
+    padding: 0;
+     
 }
 
 .catalog_card-title {
@@ -408,7 +408,9 @@ hr {
     width: 1600px;
     height: 252px;
     flex-shrink: 0;
-    background: var(--main-color)
+    background: var(--main-color);
+    
+    
 }
 
 
