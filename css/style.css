@@ -31,11 +31,9 @@ body {
 .logo {
     top: 24px;
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 26px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
     text-decoration: none;
     align-items: center;
@@ -44,6 +42,14 @@ body {
 .blue_logo {
     color: var(--blue-color);
 
+}
+
+.index_link{
+    color: var(--blue-color)
+}
+
+.portfolio_link{
+    color: var(--blue-color);
 }
 
 .menu {
@@ -70,10 +76,11 @@ body {
     margin-left: 50px;
 }
 
-.menu__list-link:hover {
+.menu__list-link:hover,
+.menu__list-link:focus {
     color: var(--blue-color);
+    
 }
-
 
 .contacts {
     display: flex;
@@ -84,7 +91,8 @@ body {
     font-weight: 500;
 }
 
-.contacts_link:hover {
+.contacts_link:hover,
+.contacts_link:focus{
     color: var(--blue-color);
 }
 
@@ -113,7 +121,7 @@ body {
     font-size: 44px;
     font-style: normal;
     font-weight: 900;
-    line-height: 60px;
+    line-height: 1.4;
     /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
@@ -136,8 +144,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px;
-    /* 187.5% */
+    line-height: 2;
     letter-spacing: 0.96px;
     display: inline-block;
     margin-left: 692px;
@@ -149,7 +156,12 @@ body {
 .main_btn:hover {
     color: #000;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    
 
+}
+
+.main_btn:focus{
+    color: #000;
 }
 
 .our_features {
@@ -166,8 +178,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    /* 171.429% */
+    line-height: 2;
     letter-spacing: 0.42px;
     flex-shrink: 0;
     padding-left: 0;
@@ -178,13 +189,18 @@ body {
 .main_features_title {
     margin-top: 84px;
     margin-bottom: 10px;
+    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
 .features_text {
     margin-top: 0;
     margin-right: 30px;
     width: 270px;
-
+    color: #757575;
 }
 
 
@@ -202,7 +218,6 @@ body {
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.08px;
     padding-left: 400px;
     margin-bottom: 0;
@@ -239,7 +254,6 @@ body {
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
 
@@ -272,7 +286,6 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.48px;
 
 }
@@ -282,7 +295,6 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.48px;
 }
 
@@ -301,12 +313,12 @@ hr {
 
 .catalog_menu {
     margin-top: 94px;
-    width: 605px;
+    width: 625px;
     height: 54px;
     flex-shrink: 0;
     margin-left: 297px;
     margin-right: 298px;
-
+    padding: 0;
 
 }
 
@@ -319,15 +331,22 @@ hr {
     border: 2px solid transparent;
     font-size: 16px;
     font-weight: 500;
-    line-height: 26px;
-    /* 162.5% */
+    font-family: 'Roboto';
+    line-height: 1.6;
     letter-spacing: 0.48px;
     color: #212121;
     background-color: #F5F4FA;
-    font-family: 'Roboto';
     outline: none;
+    margin-right: 8px;
+    
 
 }
+
+
+.catalog_btn + .catalog_btn{
+    margin-right: 8px;
+}
+
 
 .catalog_btn:focus {
     background-color: var(--blue-color);
@@ -344,13 +363,15 @@ hr {
     border: 2px solid transparent;
     font-size: 16px;
     font-weight: 500;
-    line-height: 26px;
-    /* 162.5% */
+    font-family: 'Roboto';
+    line-height: 1.6;
     letter-spacing: 0.48px;
     color: #212121;
     background-color: #F5F4FA;
-    font-family: 'Roboto';
     outline: none;
+    margin-right: 8px;
+    
+    
 }
 
 .catalog_btn-apart:focus {
@@ -378,9 +399,12 @@ hr {
 
 }
 
-.catalog_btn+.catalog_btn {
-    margin-left: 8px;
+.catalog_btn-item{
+    list-style: none;
+    display: inline;    
+    
 }
+
 
 .catalog_cards {
     margin-top: 56px;
@@ -392,8 +416,8 @@ hr {
     list-style: none;
     padding: 0;
     width: 1500px;
-    padding: 0 -35px;
-    margin: 0 -35px;
+    padding: 0;
+    margin: 0 -35px;  
     
 
 }
@@ -407,12 +431,12 @@ hr {
      
 }
 
+
 .catalog_card-title {
     color: #212121;
     font-size: 18px;
     font-weight: 700;
-    line-height: 36px;
-    /* 200% */
+    line-height: 2;
     letter-spacing: 1.08px;
     margin-bottom: 4px;
     margin-left: 24px;
@@ -423,8 +447,7 @@ hr {
     color: #757575;
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
-    /* 187.5% */
+    line-height: 2;
     letter-spacing: 0.48px;
     margin-top: 0;
     margin-left: 24px;
@@ -448,7 +471,7 @@ hr {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1;
     letter-spacing: 0.78px;
     text-decoration: none;
     align-items: center;
@@ -465,10 +488,8 @@ hr {
     font-weight: 400;
     letter-spacing: 0.42px;
     color: rgba(255, 255, 255, 0.60);
-    line-height: 24px;
-    /* 171.429% */
-
-
+    line-height: 1.7;
+  
 
 }
 
@@ -484,8 +505,7 @@ hr {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px;
-    /* 171.429% */
+    line-height: 2;
     letter-spacing: 0.42px;
     text-decoration: none;
     cursor: pointer;
@@ -503,8 +523,7 @@ hr {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px;
-    /* 171.429% */
+    line-height: 2;
     letter-spacing: 0.42px;
     text-decoration: none;
     cursor: pointer;
